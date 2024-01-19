@@ -60,7 +60,8 @@ class Unet(nn.Module):
         x = self.outconv(x)
         return x
 
-if __name__ =='__main__':
+
+if __name__ == '__main__':
     x = torch.randn(1, 3, 224, 224)
     model = Unet(3)
     y = model(x)
